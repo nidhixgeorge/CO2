@@ -64,7 +64,6 @@ requests==2.26.0
 requests-oauthlib==1.3.0
 rlp==2.0.1
 rsa==4.8
-ruamel-yaml-conda 
 six 
 social-auth-app-django==3.4.0
 social-auth-core==4.2.0
