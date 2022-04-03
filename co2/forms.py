@@ -8,17 +8,17 @@ from django.forms import SelectDateWidget
 from django.forms.widgets import Select, Textarea
 
 class CarbonForm1(forms.Form):
-    start_point = forms.CharField(label='Start', max_length = 50)
+    start_point = forms.CharField(label='Start', max_length = 50, required=False)
     address_line1 = forms.CharField(label='Address Line 1', max_length = 50)
-    address_line2 = forms.CharField(label='Address Line 2', max_length = 50)
+    address_line2 = forms.CharField(label='Address Line 2', max_length = 50, required=False)
     city = forms.CharField(label='City', max_length = 50)
     state = forms.CharField(label='State', max_length = 50)
     zipcode = forms.CharField(label='Zip', max_length = 20)
 
 class CarbonForm2(forms.Form):
-    end_point = forms.CharField(label='End Location', max_length = 50)
+    end_point = forms.CharField(label='End Location', max_length = 50, required=False)
     address_line1 = forms.CharField(label='Address Line 1', max_length = 50)
-    address_line2 = forms.CharField(label='Address Line 2', max_length = 50)
+    address_line2 = forms.CharField(label='Address Line 2', max_length = 50, required=False)
     city = forms.CharField(label='City', max_length = 50)
     state = forms.CharField(label='State', max_length = 50)
     zipcode = forms.CharField(label='Zip', max_length = 20)

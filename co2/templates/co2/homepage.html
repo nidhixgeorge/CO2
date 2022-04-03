@@ -6,12 +6,16 @@
 <h3>Save the World! Find your transportation mode carbon footprint</h3>
 <div class="card border-4">
     <div class="form-group m-4 p-4  "> 
-<form action="/" post="method">
-    <h5>Enter starting and destination addresses:</h5>
+<form action="/" method="post">
+    {% csrf_token %}
     <div class="row">
-<div class="col"><span>{{form1.as_p}}</span></div>
+        
+<div class="col">
+    <h5>Enter starting address:</h5>
+    <span>{{form1.as_p}}</span></div>
 
     <div class="col">
+        <h5>Enter destination address:</h5>
 {{form2.as_p}}</div>
 <button type='submit'>Get carbon footprint</button>
 </div>
@@ -19,5 +23,6 @@
 
 </div>
 </div>
+
 <table><tr>{{msg}}</tr></table>
 {% endblock %}
