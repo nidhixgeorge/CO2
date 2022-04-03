@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#v5zp^%@_qj#4*=7n!5=9@jcy%gnm3)o6wj5q&qr0z=4fy#4+n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://co2reduction.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['https://co2reduction.herokuapp.com','co2reduction.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
