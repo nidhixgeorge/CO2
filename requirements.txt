@@ -48,7 +48,7 @@ protobuf==3.17.3
 psycopg2==2.9.1
 pyasn1==0.4.8
 pycosat==0.6.3
-pycparser k
+pycparser
 pycryptodome==3.10.1
 PyJWT==2.3.0
 pyOpenSSL 
