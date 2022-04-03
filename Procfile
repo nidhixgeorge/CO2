@@ -1,1 +1,1 @@
-web: gunicorn clockoo.wsgi
+web: gunicorn smud2022.wsgi
