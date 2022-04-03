@@ -1,7 +1,23 @@
+{% extends "co2/base.html" %}
+{% block insertintobase %}
+{% load selectable_tags %}
+{% include_jquery_libs %}
+
+<h3>Save the World! Find your transportation mode carbon footprint</h3>
+<div class="card border-4">
+    <div class="form-group m-4 p-4  "> 
 <form action="/" post="method">
-<div class="col-6"><span>{{form1.as_p}}</span></div>
-<span>
-    <div class="col-6">
-{{form2.as_p}}</span></div>
+    <h5>Enter starting and destination addresses:</h5>
+    <div class="row">
+<div class="col"><span>{{form1.as_p}}</span></div>
+
+    <div class="col">
+{{form2.as_p}}</div>
 <button type='submit'>Get carbon footprint</button>
+</div>
 </form>
+
+</div>
+</div>
+<table><tr>{{msg}}</tr></table>
+{% endblock %}
